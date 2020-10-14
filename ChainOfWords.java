@@ -32,8 +32,7 @@ public class ChainOfWords {
             List<String> list = new ArrayList<>(Arrays.asList(words));
             Comparator<String> wordsComparator = new WordsComparator();
             list.sort(wordsComparator);
-            //boolean flag = false;
-            //while (!flag) {
+            
                 for(int i = 0; i < list.size() - 1; ) {
                     int j = i + 1;
                     String lastLetter1 = list.get(i).substring(list.get(i).length() - 1);
